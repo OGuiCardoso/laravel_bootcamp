@@ -23,7 +23,9 @@
     <header class="bg-primary text-white py-3">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="/">Laravel Bootcamp</a>
+                <img src="https://img.icons8.com/?size=64&id=hUvxmdu7Rloj&format=png" alt="laravel icon"
+                    style="width: 50px; height: 50px; margin-right: 8px;">
+                <a class="navbar-brand">Laravel Bootcamp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
