@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style="background-color: #8db6f0;">
     <header class="bg-primary text-white py-3">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -52,7 +52,7 @@
         @yield('content')
     </main>
 
-    <footer class="bg-light text-center py-3 mt-auto">
+    <footer class="text-center text-white py-3 mt-auto bg-primary">
         <div class="container">
             <p class="mb-0">&copy; {{ date('Y') }} Laravel Bootcamp. Guilherme C Moraes.</p>
         </div>

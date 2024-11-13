@@ -15,10 +15,10 @@
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
-        <button class="btn mb-4 w-100" wire:click="addChirp">Enviar</button>
+        <button class="btn btn-primary mb-4 w-100" wire:click="addChirp">Enviar</button>
 
 
-        <ul class="list-group">
+        <ul class="list-group text-start">
             @foreach ($chirps as $chirp)
             <li class="list-group-item">
                 <div>
@@ -30,8 +30,8 @@
                     <span class="text-secondary">Postado por - {{ $chirp->username }}</span>
                 </div>
                 <div class="d-flex justify-content-end mt-2">
-                    <button class="btn btn-sm  me-2" wire:click="edit({{ $chirp->id }})">Editar</button>
-                    <button class="btn btn-sm " wire:click="delete({{ $chirp->id }})"
+                    <button class="btn btn-secondary btn-sm  me-2" wire:click="edit({{ $chirp->id }})">Editar</button>
+                    <button class="btn  btn-danger btn-sm " wire:click="delete({{ $chirp->id }})"
                         onclick="return confirm('Tem certeza que deseja excluir este chirp?')">Excluir</button>
                 </div>
             </li>
@@ -41,7 +41,7 @@
 
         @if($chirpId)
         <h3 class="my-3 text-center">Editar Chirp</h3>
-        <form wire:submit.prevent="update" class="mb-4">
+        <form wire:submit.prevent="update" class="mb-4 text-start">
             <div class="mb-3">
                 <label><strong>ID:</strong> {{ $chirpId }}</label>
                 <br />
@@ -53,7 +53,7 @@
                 <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
-            <button type="submit" class="btn  w-100">Salvar</button>
+            <button type="submit" class="btn btn-success w-100">Salvar</button>
         </form>
         @endif
     </div>
