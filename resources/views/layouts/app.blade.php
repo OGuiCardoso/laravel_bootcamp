@@ -68,6 +68,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvVEFQa7qXw2eP5xND+CBN8z9GF6U5FR5vQ9E9GtV67FUHFnX1"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

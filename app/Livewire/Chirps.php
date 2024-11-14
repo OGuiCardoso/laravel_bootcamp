@@ -34,6 +34,8 @@ class Chirps extends Component
         $this->message = '';
         $this->username = ''; 
         $this->chirps = Chirp::all();
+
+        session()->flash('success', 'Chirp postado com sucesso!');
     }
 
     public function edit($id)
@@ -58,12 +60,15 @@ class Chirps extends Component
             $this->resetForm();
             $this->chirps = Chirp::all();
         }
+        session()->flash('success', 'Chirp editado com sucesso!');
     }
 
     public function delete($id)
     {
         Chirp::findOrFail($id)->delete();
+        session()->flash('deleted', 'Chirp excluído com sucesso!');
         $this->chirps = Chirp::all();
+        return redirect()->to(request()->header('Referer'));
     }
 
     public function resetForm()
